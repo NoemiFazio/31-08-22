@@ -6,11 +6,13 @@ const TopRatedList = ({ cardData, nCards }) => {
     // in Cardstyle dovremmo mettere in teoria il nome di una classe (tipo cardStyle=topRatedStyle), quindi vai a maincard
     <div className="TopRatedList">
       <div className="TopRatedList_content">
-        {cardData.map((cardData, ii) => (
+        {cardData.slice(0, nCards).map((cardData, ii) => (
           <MainCard
             cardData={cardData}
             value={{ className: "topRatedStyle" }}
             key={ii}
+            averageIsVis={false}
+            nCards={nCards}
           />
         ))}
       </div>

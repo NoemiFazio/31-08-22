@@ -16,7 +16,7 @@ const MovieEntity = ({ movieID, isRenderedList, setInputValue }) => {
     movieData;
 
   return (
-    <div className="MovieEntity">
+    <div className="MovieEntity" id="movie-entity">
       <div className="MovieEntity__info">
         <div className="MovieEntity__info--title">
           <p>title</p>

@@ -1,6 +1,10 @@
 import "./index.css";
 
-const MainCard = ({ cardData, value = { className: "MainCard" } }) => {
+const MainCard = ({
+  cardData,
+  value = { className: "MainCard" },
+  averageIsVis = true,
+}) => {
   const { title, vote_average, poster_path } = cardData;
   //qui metti sono cardStyle in rigo 3
   //poi sotto, piuttosto che mettere style={cardStyle}, dovremmo mettere in className={cardStyle} (secondo me andrebbe nel primo div, di quello MainCard)
@@ -15,7 +19,7 @@ const MainCard = ({ cardData, value = { className: "MainCard" } }) => {
       />
       <div className="MainCard__text">
         <h3>{title}</h3>
-        <p>{vote_average}</p>
+        {averageIsVis && <p>{vote_average}</p>}
       </div>
     </div>
   );

@@ -11,6 +11,7 @@ const UpcomingList = ({ cardData }) => {
             cardData={cardData}
             value={{ className: "upcomingStyle" }}
             key={ii}
+            averageIsVis={false}
           />
         ))}
       </div>

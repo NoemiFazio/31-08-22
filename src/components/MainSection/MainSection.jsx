@@ -28,7 +28,7 @@ const MainSection = () => {
       {movieLists.popular && <MainCard cardData={movieLists.popular[0]} />}
       <div className="MainSection_right">
         {movieLists.topRated && (
-          <TopRatedList cardData={movieLists.topRated} nCards={4} />
+          <TopRatedList cardData={movieLists.topRated} nCards={6} />
         )}
         {movieLists.upcoming && (
           <UpcomingList cardData={movieLists.upcoming} nCards={4} />

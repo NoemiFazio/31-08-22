@@ -9,6 +9,7 @@ const MainInput = ({
   isRenderedList,
   onFormsubmit,
 }) => {
+  const mainInputRef = useRef(null);
   const inputRef = useRef(null);
 
   useEffect(() => {
@@ -31,7 +32,7 @@ const MainInput = ({
         className: "icon",
       }}
     >
-      <form className="MainInput" onSubmit={onHandleSubmit}>
+      <form ref={mainInputRef} className="MainInput" onSubmit={onHandleSubmit}>
         <input
           ref={inputRef}
           value={inputValue}

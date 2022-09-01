@@ -16,6 +16,7 @@
 .MainSection_right {
   display: flex;
   flex-direction: column;
-  gap: 132px;
+  justify-content: space-evenly;
+  /* gap: 132px; */
   width: 1000px;
 }
